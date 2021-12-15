@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include lapillaga_frappe *.css
+recursive-include lapillaga_frappe *.csv
+recursive-include lapillaga_frappe *.html
+recursive-include lapillaga_frappe *.ico
+recursive-include lapillaga_frappe *.js
+recursive-include lapillaga_frappe *.json
+recursive-include lapillaga_frappe *.md
+recursive-include lapillaga_frappe *.png
+recursive-include lapillaga_frappe *.py
+recursive-include lapillaga_frappe *.svg
+recursive-include lapillaga_frappe *.txt
+recursive-exclude lapillaga_frappe *.pyc
