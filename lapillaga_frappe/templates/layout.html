@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="Luis Pillaga" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>{% block title %}{{ title | striptags }}{% endblock %} - Luis Pillaga</title>
+
+    {% block favicon %}
+    <link
+      rel="shortcut icon"
+      href="{{ (favicon or "/assets/lapillaga_frappe/favicon.ico") | abs_url }}"
+      type="image/x-icon"
+    >
+    {% endblock %}
+
+    {% block stylesheets %}
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/reset.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/bootstrap-grid.min.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/animations.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/perfect-scrollbar.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/owl.carousel.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/magnific-popup.css" | abs_url }}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/lapillaga_frappe/css/main.css" | abs_url }}"
+      type="text/css"
+    />
+    {% endblock %}
+
+    {% block head_tags %}{% endblock %}
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url('/assets/lapillaga_frappe/img/main_bg.png');"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <!-- Header -->
+          {% include "templates/includes/header/header.html" %}
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+                {%include "templates/includes/main/main.html"%}
+                {%include "templates/includes/about/about.html"%}
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    {% block scripts %}
+    <script src="{{ "/assets/lapillaga_frappe/js/jquery.min.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/modernizr.custom.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/animating.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/imagesloaded.pkgd.min.js" | abs_url }}"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/perfect-scrollbar.min.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/jquery.shuffle.min.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/masonry.pkgd.min.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/owl.carousel.min.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/jquery.magnific-popup.min.js" | abs_url }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/jquery.googlemap.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/validator.js" | abs_url }}"></script>
+    <script src="{{ "/assets/lapillaga_frappe/js/main.js" | abs_url }}"></script>
+
+    {% endblock %}
+  </body>
+</html>

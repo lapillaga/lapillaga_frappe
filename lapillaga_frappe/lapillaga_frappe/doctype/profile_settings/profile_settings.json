@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-16 13:22:49.813742",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_section",
+  "full_name",
+  "birthday_date",
+  "residence",
+  "mobile",
+  "column_break_1",
+  "company_role",
+  "address",
+  "email",
+  "cv",
+  "about_section",
+  "about_me",
+  "profile_photo",
+  "role_section",
+  "role_labels"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "General information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birthday_date",
+   "fieldtype": "Date",
+   "label": "Birthday date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "residence",
+   "fieldtype": "Data",
+   "label": "Country residence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_role",
+   "fieldtype": "Data",
+   "label": "Company role",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "E-mail",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "about_section",
+   "fieldtype": "Section Break",
+   "label": "About"
+  },
+  {
+   "fieldname": "about_me",
+   "fieldtype": "Text Editor",
+   "label": "About me",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Profile photo"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Link",
+   "label": "Current CV",
+   "options": "Curriculum Vitae",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "role_labels",
+   "fieldtype": "Table",
+   "label": "Company role labels",
+   "options": "Company Role Labels",
+   "reqd": 1
+  }
+ ],
+ "image_field": "profile_photo",
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-12-16 18:30:32.811968",
+ "modified_by": "Administrator",
+ "module": "Lapillaga Frappe",
+ "name": "Profile Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
