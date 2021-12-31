@@ -1,6 +1,6 @@
 ## Lapillaga Frappe
 
-Personal Portfolio Frappe App
+Personal Portfolio Frappe App ...
 
 #### License
 
